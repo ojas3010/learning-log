@@ -1,8 +1,8 @@
-def oddEven():
-    #     
-    n = int(input())
-    if n % 2 == 0:
-        print("Even")
-    else:
-        print("Odd")
-oddEven()
+# question - odd / even
+def oddEven(n):
+    return "Even" if n % 2 == 0 else "Odd"
+
+#func to keep code more readable 
+print("Enter num")
+n = int(input())
+print(oddEven(n))

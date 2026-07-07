@@ -5,4 +5,4 @@ def oddEven():
         print("Even")
     else:
         print("Odd")
-oddEvn()
+oddEven()

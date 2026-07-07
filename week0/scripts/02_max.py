@@ -1,12 +1,13 @@
-#question: max of a list without using max
-def maximum(a):
+# question: max of a list without using max()
+def find_max(a):
     large = a[0]
-    for i in range(len(a)):
+    for i in range(1, len(a)):  # start at 1 — a[0] is already the seed
         if a[i] > large:
             large = a[i]
     return large
 
-# i have no idea how split and map works im used to array in c java 
-arr = list(map(int, input("Enter nums:").split()))
+
+# split() breaks the input string on spaces → list of str; map(int, ...) converts each to int
+arr = list(map(int, input("Enter nums: ").split()))
 # passed a instead of arr before
-print(maximum(arr))
+print(find_max(arr))
